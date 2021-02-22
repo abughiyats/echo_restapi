@@ -2,6 +2,7 @@ package main
 
 import (
 	"net/http"
+	"strconv"
 
 	"github.com/labstack/echo"
 )
@@ -33,6 +34,21 @@ func deleteUserController(c echo.Context) error {
 
 // update user by id
 func updateUserController(c echo.Context) error {
+	user := new(User)
+	if err := c.Bind(user); err != nil {
+		return c.JSON(http.StatusBadRequest, map[string]interface{}{
+			"success": false,
+			"message": "user binding failed",
+		})
+	}
+	id, _ := strconv.Atoi(c.Param("id"))
+	users[id].Name = user.Name
+	users[id].Email = user.Email
+	users[id].Password = user.Password
+	return c.JSON(http.StatusOK, map[string]interface{}{
+		"message": "user has been updated",
+		"user":    users[id],
+	})
 }
 
 func createUserController(c echo.Context) error {
