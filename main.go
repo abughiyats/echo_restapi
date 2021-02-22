@@ -42,6 +42,28 @@ func getUserController(c echo.Context) error {
 
 // delete user by id
 func deleteUserController(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+
+	if err != nil {
+		return c.JSON(http.StatusBadRequest, map[string]interface{}{
+			"success": false,
+			"message": "can't parse id",
+		})
+	}
+	for i, user := range users {
+		if user.Id == id {
+			users = append(users[:i], users[i+1:]...)
+			return c.JSON(http.StatusOK, map[string]interface{}{
+				"success": true,
+				"message": "user succesfully deleted",
+			})
+		}
+	}
+
+	return c.JSON(http.StatusNotFound, map[string]interface{}{
+		"success": false,
+		"message": "user not found",
+	})
 }
 
 // update user by id
