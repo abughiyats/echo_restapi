@@ -2,8 +2,7 @@
 
 ### Install
 
-------------
-
+___
 1. Clone this repository to ```$GOPATH/src/github.com/abughiyats``` directory:
 
 
