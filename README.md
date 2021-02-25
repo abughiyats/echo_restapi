@@ -1,7 +1,7 @@
 # REST API ECHO GO
 
 ### Install
-_
+__
 1. Clone this repository to ```$GOPATH/src/github.com/abughiyats``` directory:
 > `git clone https://github.com/abughiyats/echo_restapi.git`
 
