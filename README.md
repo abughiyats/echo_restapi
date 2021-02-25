@@ -7,7 +7,7 @@ ___
 
 
 ------------|
-> git clone https://github.com/abughiyats/echo_restapi.git|
+> git clone https://github.com/abughiyats/echo_restapi.git |
 ------------|
 
 *This text will be italic*
