@@ -2,9 +2,14 @@
 
 ### Install
 
+------------
 
 1. Clone this repository to ```$GOPATH/src/github.com/abughiyats``` directory:
-> `git clone https://github.com/abughiyats/echo_restapi.git`
+
+
+------------
+> ```git clone https://github.com/abughiyats/echo_restapi.git```
+------------
 
 *This text will be italic*
 _This will also be italic_
