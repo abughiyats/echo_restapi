@@ -1,6 +1,7 @@
 # REST API ECHO GO
 
 ### Install
+___
 1. Clone this repository to ```$GOPATH/src/github.com/abughiyats``` directory:
 > `git clone https://github.com/abughiyats/echo_restapi.git`
 
@@ -27,3 +28,9 @@ Content in the first column | Content in the second column
 - [x] list syntax required (any unordered or ordered list supported)
 - [x] this is a complete item
 - [ ] this is an incomplete item
+
+{safasfadsfasdfasdf}
+(asfsafasdfasdf)
+[sdafasdfsadfsadfasfd]
+
+\    backslash`   backtick*    asterisk_    underscore{}   curly braces[]   square brackets()   parentheses#    hash mark+   plus sign-    minus sign (hyphen).     dot!     exclamation mark
